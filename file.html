@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" contect="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Burger Gallery</title>
+        <!-- Link to Css-->
+        <link rel="stylesheet" href="style.css">
+        <!-- Box icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    </head>
+    <body>
+
+         <!-- Home -->
+         <section class="home" id="home">
+            <div class="home-text">
+                <img src="img/logo.png" alt="" width="500">
+                
+                <p>At Burger Gallery, we're obsessed with crafting the ultimate burger experience.</p>
+                <p>Source only the freshest ingredients, grinding our beef in-house and making our sauces and buns from scratch.</p>
+                <P>From classic cheeseburgers to creative gourmet options, we offer a variety of delicious choices alongside tempting sides, refreshing drinks, and decadent desserts.</P>
+                <P>Whether you're craving a juicy patty or a fun and flavorful meal with friends, Burger Ballery is your go-to spot for legendary burgers..</p>
+                    <br>
+                    <nav>
+                        <ul class="navbar">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#New">New</a></li>
+                            <li><a href="#Services">Services</a></li>
+                            <li><a href="#Cart"><i class='bx bx-cart' ></i></a></li>
+                            <li><a href="#Contact">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                    <section>
+                    <div class="fb"><a href="http://www.facebook.com"><img src="img/fb.png"></a></div>
+                    
+
+                    <div class="yt"><a href="http://youtube.com"><img src="img/yt.png"></a></div>
+                    
+                    </section>
+                    
+                    
+            </div>
+
+                </section>
+            
+           
+            
+        </section>
+        <br>
+        <div class="p1">Latest Products</div>
+        <br>
+
+        <!-- image slider strt-->
+        <div class="slider">
+            <div class="slides">
+                <!-- radio buttons start-->
+                <input type="radio" name="radio.btn" id="radio1">
+                <input type="radio" name="radio.btn" id="radio2">
+                <input type="radio" name="radio.btn" id="radio3">
+                <!--radio buttons end-->
+
+                <!-- slide images start-->
+                <div class="slide first">
+                    <img src="img/Burgers3.jpg" alt="" width="">
+                </div>
+                <div class="slide">
+                    <img src="img/Burgers4.jpg" alt="" width="">
+                </div>
+                <div class="slide">
+                    <img src="img/Burgers5.jpg" alt="" width="">
+                </div>
+                <!-- slide images  end -->
+
+                <!-- automatic navigation start-->
+                <div class="navigation-auto">
+                    <div class="auto_btn1"></div>
+                    <div class="auto_btn2"></div>
+                    <div class="auto_btn3"></div>
+                </div>
+                 <!-- automatic navigation end-->
+
+                 <!-- manual navigation start-->
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                    </div>
+                <!-- manual navigation end-->
+
+           </div>
+        </div>
+        
+
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function(){
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if(counter > 3){
+                    counter = 1;
+                }
+
+            }, 5000);
+        </script>
+
+        <!-- image slider ends-->
+        <br>
+        <br>
+        <div class="p1">Recent Price List</div>
+        
+        <!-- table start-->
+
+        <section>
+                <table>
+                    <tr>
+                        <th>Burger Item</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>Chilli Chicken</td>
+                        <td>1200</td>
+                    </tr>
+                    <tr>
+                        <td>Roast Chicken</td>
+                        <td>1300</td>
+                    </tr>
+                    <tr>
+                        <td>Spicy Ham</td>
+                        <td>1100</td>
+                    </tr>
+                    <tr>
+                        <td>Sea Food</td>
+                        <td>1600</td>
+                    </tr>
+                 </table>
+           
+        </section>
+
+                <!-- table end-->
+
+        
+            <div class="p2">OUR BRANCHES</div>
+<ul type="disk">
+                    <li>Colombo</li>
+                    <li>Matara</li>
+                    <li>Anuradhapura</li>
+                    <li>Galle</li>
+                    <li>Kandy</li>
+</ul>
+
+        <!-- footer-->
+        <footer>
+        
+        <p>Copyrights! All Rights Recieved By </p> <img src="img/logo.png" alt="" width="70"  >
+
+        </footer>
+
+
+    </body>
